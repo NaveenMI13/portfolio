@@ -27,7 +27,7 @@ Pure HTML/CSS/JS - just open and view!
 - **Timeline Layout**: Professional experience presentation
 - **Responsive**: Works perfectly on all devices
 - **Auto-hide Navigation**: Navigation hides on scroll down
-- **Professional Profiles**: LinkedIn, Naukri, and Indeed profile links integrated
+- **Professional Profiles**: LinkedIn profile link integrated
 
 ## Customization
 
