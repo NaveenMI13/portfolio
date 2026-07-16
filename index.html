@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Naveen Kumar S - Senior Backend Developer (Java, Spring Boot & Microservices) Portfolio">
-    <title>Naveen Kumar S | Senior Backend Developer</title>
+    <title data-i18n="pageTitle">Naveen Kumar S | Senior Backend Developer</title>
 
     <!-- Social preview -->
     <meta property="og:type" content="website">
@@ -18,40 +18,56 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Theme Toggle -->
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-        <i class="fas fa-moon"></i>
-    </button>
-
     <!-- Navigation -->
     <nav class="nav">
         <div class="container">
             <a href="#" class="logo">NK</a>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" data-i18n="navHome">Home</a></li>
+                <li><a href="#about" data-i18n="navAbout">About</a></li>
+                <li><a href="#experience" data-i18n="navExperience">Experience</a></li>
+                <li><a href="#projects" data-i18n="navProjects">Projects</a></li>
+                <li><a href="#skills" data-i18n="navSkills">Skills</a></li>
+                <li><a href="#contact" data-i18n="navContact">Contact</a></li>
             </ul>
-            <button class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="nav-actions">
+                <div class="lang-switcher" id="langSwitcher">
+                    <button class="lang-toggle" id="langToggle" aria-label="Language" aria-expanded="false" aria-haspopup="listbox" data-i18n-aria="langLabel">
+                        <i class="fas fa-globe"></i>
+                    </button>
+                    <ul class="lang-menu" id="langMenu" role="listbox" hidden>
+                        <li role="option" data-lang="ta" class="lang-option"><span class="lang-native">தமிழ்</span><span class="lang-name">Tamil</span></li>
+                        <li role="option" data-lang="en" class="lang-option active"><span class="lang-native">English</span><span class="lang-name">English</span></li>
+                        <li role="option" data-lang="hi" class="lang-option"><span class="lang-native">हिन्दी</span><span class="lang-name">Hindi</span></li>
+                        <li role="option" data-lang="ru" class="lang-option"><span class="lang-native">Русский</span><span class="lang-name">Russian</span></li>
+                        <li role="option" data-lang="de" class="lang-option"><span class="lang-native">Deutsch</span><span class="lang-name">German</span></li>
+                        <li role="option" data-lang="ja" class="lang-option"><span class="lang-native">日本語</span><span class="lang-name">Japanese</span></li>
+                    </ul>
+                </div>
+                <button class="share-toggle" id="shareToggle" aria-label="Share profile" data-i18n-aria="shareLabel" title="Share">
+                    <i class="fas fa-share-nodes"></i>
+                </button>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" data-i18n-aria="themeLabel">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </nav>
 
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
         <ul>
-            <li><a href="#home" class="mobile-link">Home</a></li>
-            <li><a href="#about" class="mobile-link">About</a></li>
-            <li><a href="#experience" class="mobile-link">Experience</a></li>
-            <li><a href="#projects" class="mobile-link">Projects</a></li>
-            <li><a href="#skills" class="mobile-link">Skills</a></li>
-            <li><a href="#contact" class="mobile-link">Contact</a></li>
+            <li><a href="#home" class="mobile-link" data-i18n="navHome">Home</a></li>
+            <li><a href="#about" class="mobile-link" data-i18n="navAbout">About</a></li>
+            <li><a href="#experience" class="mobile-link" data-i18n="navExperience">Experience</a></li>
+            <li><a href="#projects" class="mobile-link" data-i18n="navProjects">Projects</a></li>
+            <li><a href="#skills" class="mobile-link" data-i18n="navSkills">Skills</a></li>
+            <li><a href="#contact" class="mobile-link" data-i18n="navContact">Contact</a></li>
         </ul>
     </div>
 
@@ -59,33 +75,33 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <p class="hero-greeting">Hi, I'm</p>
+                <p class="hero-greeting" data-i18n="heroGreeting">Hi, I'm</p>
                 <h1 class="hero-name">Naveen Kumar S</h1>
-                <h2 class="hero-title">Senior Backend Developer — Java | Spring Boot & Microservices</h2>
-                <p class="hero-description">
+                <h2 class="hero-title" data-i18n="heroTitle">Senior Backend Developer — Java | Spring Boot & Microservices</h2>
+                <p class="hero-description" data-i18n="heroDescription">
                     Designing scalable microservices with Java 17, Spring Boot, Kafka, and Redis for 5.6+ years —
                     with a focus on multi-tenant architecture, secure authentication, and performance at scale.
                 </p>
                 <div class="hero-cta">
-                    <a href="#contact" class="btn btn-primary">Get in touch</a>
-                    <a href="#projects" class="btn btn-secondary">View work</a>
+                    <a href="#contact" class="btn btn-primary" data-i18n="ctaContact">Get in touch</a>
+                    <a href="#projects" class="btn btn-secondary" data-i18n="ctaProjects">View work</a>
                 </div>
                 <div class="hero-stats">
                     <div class="stat-item">
                         <span class="stat-number">5.6+</span>
-                        <span class="stat-label">Years Experience</span>
+                        <span class="stat-label" data-i18n="statYears">Years Experience</span>
                     </div>
                     <div class="stat-item">
                         <span class="stat-number">11+</span>
-                        <span class="stat-label">Enterprise Clients</span>
+                        <span class="stat-label" data-i18n="statClients">Enterprise Clients</span>
                     </div>
                     <div class="stat-item">
                         <span class="stat-number">30%</span>
-                        <span class="stat-label">Performance Boost</span>
+                        <span class="stat-label" data-i18n="statPerf">Performance Boost</span>
                     </div>
                     <div class="stat-item">
                         <span class="stat-number">4</span>
-                        <span class="stat-label">Awards</span>
+                        <span class="stat-label" data-i18n="statAwards">Awards</span>
                     </div>
                 </div>
                 <div class="social-links">
@@ -106,18 +122,18 @@
     <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title" data-i18n="aboutTitle">About Me</h2>
             <div class="about-content">
                 <div class="about-photo-container">
                     <img src="SnkProfFullSize.png" alt="Naveen Kumar S" class="about-photo">
                 </div>
                 <div class="about-text">
-                    <p>
+                    <p data-i18n-html="aboutP1">
                         Senior Backend Developer with <strong>5.6+ years</strong> of professional experience designing
                         scalable microservices using <strong>Java 17, Spring Boot, Spring Security, Hibernate, JPA,
                         Kafka</strong> and <strong>MySQL</strong>.
                     </p>
-                    <p>
+                    <p data-i18n="aboutP2">
                         Experienced in multi-tenant architectures, end-to-end Java version migration (8 → 17),
                         OAuth 2.0/OpenID Connect (OIDC) authentication, Redis-based caching, and enterprise backend
                         performance optimization. Recognized multiple times for technical leadership, mentoring, and
@@ -126,7 +142,7 @@
                     <div class="quick-info">
                         <div class="info-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Chennai, India</span>
+                            <span data-i18n="location">Chennai, India</span>
                         </div>
                         <div class="info-item">
                             <i class="fas fa-envelope"></i>
@@ -145,7 +161,7 @@
     <!-- Experience Section -->
     <section id="experience" class="section">
         <div class="container">
-            <h2 class="section-title">Experience</h2>
+            <h2 class="section-title" data-i18n="experienceTitle">Experience</h2>
             
             <div class="timeline">
                 <div class="timeline-item">
@@ -153,18 +169,18 @@
                     <div class="timeline-content">
                         <div class="timeline-header">
                             <div>
-                                <h3>Software Developer</h3>
+                                <h3 data-i18n="roleSolverminds">Software Developer</h3>
                                 <h4>Solverminds Solutions and Technologies</h4>
                             </div>
-                            <span class="timeline-date">Mar 2022 – Present</span>
+                            <span class="timeline-date" data-i18n="dateSolverminds">Mar 2022 – Present</span>
                         </div>
                         <ul>
-                            <li>Engineered and maintained RESTful APIs for user management, business logic, and data integration — documented with Swagger/OpenAPI — across 11+ enterprise clients</li>
-                            <li>Boosted application performance by 30% and cut average load time by 3 seconds using in-memory caching and Redis for notification, login, and metadata modules</li>
-                            <li>Architected a multi-tenant system (single DB, schema isolation) onboarding 7+ clients across 3 tenant groups, using Spring Cloud Config and Eureka for configuration and service discovery</li>
-                            <li>Owning end-to-end Java 8 → Java 17 migration across 6–10 client-facing production modules (Login/Auth, Payment/Billing, Core BPM), resolving deprecated APIs and dependency conflicts with zero client disruption</li>
-                            <li>Integrated AI chatbot and AI-assisted tooling into client solutions</li>
-                            <li>Managed builds across UAT and production release cycles for 11+ clients, including security patching and compliance updates</li>
+                            <li data-i18n="sol1">Engineered and maintained RESTful APIs for user management, business logic, and data integration — documented with Swagger/OpenAPI — across 11+ enterprise clients</li>
+                            <li data-i18n="sol2">Boosted application performance by 30% and cut average load time by 3 seconds using in-memory caching and Redis for notification, login, and metadata modules</li>
+                            <li data-i18n="sol3">Architected a multi-tenant system (single DB, schema isolation) onboarding 7+ clients across 3 tenant groups, using Spring Cloud Config and Eureka for configuration and service discovery</li>
+                            <li data-i18n="sol4">Owning end-to-end Java 8 → Java 17 migration across 6–10 client-facing production modules (Login/Auth, Payment/Billing, Core BPM), resolving deprecated APIs and dependency conflicts with zero client disruption</li>
+                            <li data-i18n="sol5">Integrated AI chatbot and AI-assisted tooling into client solutions</li>
+                            <li data-i18n="sol6">Managed builds across UAT and production release cycles for 11+ clients, including security patching and compliance updates</li>
                         </ul>
                     </div>
                 </div>
@@ -174,17 +190,17 @@
                     <div class="timeline-content">
                         <div class="timeline-header">
                             <div>
-                                <h3>Programmer Trainee</h3>
+                                <h3 data-i18n="roleCognizant">Programmer Trainee</h3>
                                 <h4>Cognizant Technology Solutions</h4>
                             </div>
-                            <span class="timeline-date">Nov 2020 – Feb 2022</span>
+                            <span class="timeline-date" data-i18n="dateCognizant">Nov 2020 – Feb 2022</span>
                         </div>
                         <ul>
-                            <li>Contributed to backend Java/Spring Boot API enhancements and bug resolution for a large-scale payment processing system</li>
-                            <li>Performed rigorous API data validation and input sanitization, ensuring regulatory compliance across high-volume transaction flows</li>
-                            <li>Developed and executed JUnit test cases for REST API endpoints, improving code coverage and reducing regression defects</li>
-                            <li>Collaborated with senior developers on RESTful service enhancements, gaining hands-on exposure to enterprise coding standards</li>
-                            <li>Participated in Agile ceremonies (standups, sprint planning, retrospectives) using Jira</li>
+                            <li data-i18n="cog1">Contributed to backend Java/Spring Boot API enhancements and bug resolution for a large-scale payment processing system</li>
+                            <li data-i18n="cog2">Performed rigorous API data validation and input sanitization, ensuring regulatory compliance across high-volume transaction flows</li>
+                            <li data-i18n="cog3">Developed and executed JUnit test cases for REST API endpoints, improving code coverage and reducing regression defects</li>
+                            <li data-i18n="cog4">Collaborated with senior developers on RESTful service enhancements, gaining hands-on exposure to enterprise coding standards</li>
+                            <li data-i18n="cog5">Participated in Agile ceremonies (standups, sprint planning, retrospectives) using Jira</li>
                         </ul>
                     </div>
                 </div>
@@ -195,13 +211,13 @@
     <!-- Projects Section -->
     <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title" data-i18n="projectsTitle">Featured Projects</h2>
             
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-number">01</div>
-                    <h3>Java 8 → Java 17 Enterprise Migration</h3>
-                    <p>
+                    <h3 data-i18n="proj1Title">Java 8 → Java 17 Enterprise Migration</h3>
+                    <p data-i18n="proj1Desc">
                         Owned end-to-end migration of 6–10 client-facing production modules — including
                         Login/Authentication, Payment/Billing, and Core BPM — resolving deprecated APIs and
                         dependency conflicts with zero disruption to client-facing functionality.
@@ -215,8 +231,8 @@
 
                 <div class="project-card">
                     <div class="project-number">02</div>
-                    <h3>Multitenant System Implementation</h3>
-                    <p>
+                    <h3 data-i18n="proj2Title">Multitenant System Implementation</h3>
+                    <p data-i18n="proj2Desc">
                         Designed and deployed a multitenant architecture supporting multiple client groups 
                         on a single server and database, ensuring complete data isolation and integrity.
                     </p>
@@ -229,23 +245,22 @@
 
                 <div class="project-card">
                     <div class="project-number">03</div>
-                    <h3>Application Caching & Performance Optimization</h3>
-                    <p>
+                    <h3 data-i18n="proj3Title">Application Caching & Performance Optimization</h3>
+                    <p data-i18n="proj3Desc">
                         Reduced system response time by 30% and lowered DB load by integrating Redis
                         (in-memory) caching across notification, login, and high-frequency metadata modules,
                         with TTL-based cache eviction for consistency.
                     </p>
                     <div class="project-tags">
                         <span>Redis</span>
-                        <span>Caffeine Cache</span>
                         <span>Performance</span>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-number">04</div>
-                    <h3>SSO Integration (OAuth 2.0 / OpenID Connect)</h3>
-                    <p>
+                    <h3 data-i18n="proj4Title">SSO Integration (OAuth 2.0 / OpenID Connect)</h3>
+                    <p data-i18n="proj4Desc">
                         Assisted in integrating Single Sign-On using OAuth 2.0 and OIDC, enabling secure
                         authentication across multiple client tenants, with Spring Security enforcing
                         role-based access control (RBAC) post-authentication.
@@ -259,8 +274,8 @@
 
                 <div class="project-card">
                     <div class="project-number">05</div>
-                    <h3>Form Version Management Utility</h3>
-                    <p>
+                    <h3 data-i18n="proj5Title">Form Version Management Utility</h3>
+                    <p data-i18n="proj5Desc">
                         Built a production-grade audit and version-control component using the Java
                         Reflection API to detect, compare, and log field-level changes in user-submitted
                         forms, improving traceability and audit readiness.
@@ -278,11 +293,11 @@
     <!-- Skills Section -->
     <section id="skills" class="section">
         <div class="container">
-            <h2 class="section-title">Skills & Expertise</h2>
+            <h2 class="section-title" data-i18n="skillsTitle">Skills & Expertise</h2>
             
             <div class="skills-grid">
                 <div class="skill-group">
-                    <h3><i class="fas fa-code"></i> Languages & Frameworks</h3>
+                    <h3><i class="fas fa-code"></i> <span data-i18n="skillLang">Languages & Frameworks</span></h3>
                     <div class="skill-list">
                         <span>Java 17</span>
                         <span>Spring Boot</span>
@@ -296,7 +311,7 @@
                 </div>
 
                 <div class="skill-group">
-                    <h3><i class="fas fa-shield-halved"></i> Security</h3>
+                    <h3><i class="fas fa-shield-halved"></i> <span data-i18n="skillSecurity">Security</span></h3>
                     <div class="skill-list">
                         <span>Spring Security</span>
                         <span>OAuth 2.0</span>
@@ -308,17 +323,16 @@
                 </div>
 
                 <div class="skill-group">
-                    <h3><i class="fas fa-bolt"></i> Caching & Messaging</h3>
+                    <h3><i class="fas fa-bolt"></i> <span data-i18n="skillCache">Caching & Messaging</span></h3>
                     <div class="skill-list">
                         <span>Redis</span>
-                        <span>Caffeine Cache</span>
                         <span>In-Memory Caching</span>
                         <span>Apache Kafka</span>
                     </div>
                 </div>
 
                 <div class="skill-group">
-                    <h3><i class="fas fa-cloud"></i> Cloud & Service Discovery</h3>
+                    <h3><i class="fas fa-cloud"></i> <span data-i18n="skillCloud">Cloud & Service Discovery</span></h3>
                     <div class="skill-list">
                         <span>Spring Cloud Config</span>
                         <span>Eureka</span>
@@ -329,7 +343,7 @@
                 </div>
 
                 <div class="skill-group">
-                    <h3><i class="fas fa-database"></i> Database & Monitoring</h3>
+                    <h3><i class="fas fa-database"></i> <span data-i18n="skillDb">Database & Monitoring</span></h3>
                     <div class="skill-list">
                         <span>MySQL</span>
                         <span>DBeaver</span>
@@ -339,7 +353,7 @@
                 </div>
 
                 <div class="skill-group">
-                    <h3><i class="fas fa-tools"></i> DevOps & Tools</h3>
+                    <h3><i class="fas fa-tools"></i> <span data-i18n="skillDevops">DevOps & Tools</span></h3>
                     <div class="skill-list">
                         <span>Git</span>
                         <span>Jenkins</span>
@@ -354,7 +368,7 @@
                 </div>
 
                 <div class="skill-group">
-                    <h3><i class="fas fa-vial"></i> Testing</h3>
+                    <h3><i class="fas fa-vial"></i> <span data-i18n="skillTesting">Testing</span></h3>
                     <div class="skill-list">
                         <span>JUnit 5</span>
                         <span>Mockito</span>
@@ -364,37 +378,37 @@
                 </div>
 
                 <div class="skill-group">
-                    <h3><i class="fas fa-brain"></i> Soft Skills</h3>
+                    <h3><i class="fas fa-brain"></i> <span data-i18n="skillSoft">Soft Skills</span></h3>
                     <div class="skill-list">
-                        <span>Problem Solving</span>
-                        <span>Leadership</span>
-                        <span>Team Player</span>
-                        <span>Communication</span>
-                        <span>Ownership</span>
-                        <span>Business Adaptation</span>
+                        <span data-i18n="soft1">Problem Solving</span>
+                        <span data-i18n="soft2">Leadership</span>
+                        <span data-i18n="soft3">Team Player</span>
+                        <span data-i18n="soft4">Communication</span>
+                        <span data-i18n="soft5">Ownership</span>
+                        <span data-i18n="soft6">Business Adaptation</span>
                     </div>
                 </div>
             </div>
 
             <!-- Awards -->
             <div class="awards">
-                <h3 class="awards-title">Recognition</h3>
+                <h3 class="awards-title" data-i18n="awardsTitle">Recognition</h3>
                 <div class="awards-grid">
                     <div class="award-item">
                         <i class="fas fa-trophy"></i>
-                        <p><strong>Q2 & Q4 2022</strong> - BPM Issue Resolution</p>
+                        <p data-i18n-html="award1"><strong>Q2 & Q4 2022</strong> - BPM Issue Resolution</p>
                     </div>
                     <div class="award-item">
                         <i class="fas fa-trophy"></i>
-                        <p><strong>Q4 2023</strong> - Caching Implementation</p>
+                        <p data-i18n-html="award2"><strong>Q4 2023</strong> - Caching Implementation</p>
                     </div>
                     <div class="award-item">
                         <i class="fas fa-star"></i>
-                        <p><strong>Q1 2025</strong> - Guiding Star Award</p>
+                        <p data-i18n-html="award3"><strong>Q1 2025</strong> - Guiding Star Award</p>
                     </div>
                     <div class="award-item">
                         <i class="fas fa-star"></i>
-                        <p><strong>Q1 2026</strong> - Guiding Star Award (Java 17 Migration Leadership)</p>
+                        <p data-i18n-html="award4"><strong>Q1 2026</strong> - Guiding Star Award (Java 17 Migration Leadership)</p>
                     </div>
                 </div>
             </div>
@@ -404,21 +418,21 @@
     <!-- Education Section -->
     <section class="section">
         <div class="container">
-            <h2 class="section-title">Education</h2>
+            <h2 class="section-title" data-i18n="educationTitle">Education</h2>
             
             <div class="education-grid">
                 <div class="education-card">
                     <i class="fas fa-graduation-cap"></i>
-                    <h3>MCA - Master of Computer Applications</h3>
+                    <h3 data-i18n="edu1Title">MCA - Master of Computer Applications</h3>
                     <p class="university">Bharathiar University</p>
-                    <p class="year">2024 (Correspondence)</p>
+                    <p class="year" data-i18n="edu1Year">2024 (Correspondence)</p>
                 </div>
 
                 <div class="education-card">
                     <i class="fas fa-graduation-cap"></i>
-                    <h3>B.Sc. - Bachelor of Science</h3>
+                    <h3 data-i18n="edu2Title">B.Sc. - Bachelor of Science</h3>
                     <p class="university">Kongu Engineering College</p>
-                    <p class="year">2020 (Regular)</p>
+                    <p class="year" data-i18n="edu2Year">2020 (Regular)</p>
                 </div>
             </div>
         </div>
@@ -427,10 +441,10 @@
     <!-- Contact Section -->
     <section id="contact" class="section">
         <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
+            <h2 class="section-title" data-i18n="contactTitle">Let's Connect</h2>
             
             <div class="contact-content">
-                <p class="contact-intro">
+                <p class="contact-intro" data-i18n="contactIntro">
                     I'm always open to discussing new opportunities, collaborations, 
                     or just having a chat about technology.
                 </p>
@@ -446,16 +460,16 @@
                     </a>
                     <div class="contact-method">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>Chennai, India</span>
+                        <span data-i18n="location">Chennai, India</span>
                     </div>
                 </div>
 
                 <div class="professional-profiles">
-                    <h3>Professional Profiles</h3>
+                    <h3 data-i18n="profilesTitle">Professional Profiles</h3>
                     <div class="profile-links">
                         <a href="https://www.linkedin.com/in/naveennksgv/" target="_blank" rel="noopener noreferrer" class="profile-link">
                             <i class="fab fa-linkedin"></i>
-                            <span>LinkedIn Profile</span>
+                            <span data-i18n="linkedinProfile">LinkedIn Profile</span>
                         </a>
                     </div>
                 </div>
@@ -466,7 +480,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>Naveen Kumar S — Building scalable systems that endure.</p>
+            <p data-i18n="footerTagline">Naveen Kumar S — Building scalable systems that endure.</p>
             <p class="footer-verse" tabindex="0" aria-label="Tamil verse: Live as you think. Hindi: जैसा सोचो वैसा जियो">
                 <span class="verse-tamil" lang="ta">எண்ணம் போல் வாழ்கை !</span>
                 <span class="verse-tooltip" role="tooltip">
@@ -477,7 +491,9 @@
         </div>
     </footer>
 
+    <div class="share-toast" id="shareToast" role="status" aria-live="polite"></div>
+
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
-
